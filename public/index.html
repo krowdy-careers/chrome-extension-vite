@@ -1,14 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Extensión</title>
-  <link rel="stylesheet" href="/src/style.css">
+  <title>Scraper Vea</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
 </head>
+
 <body>
-  <h1>Mi Extensión</h1>
-  <button id="btn">Haz clic aquí</button>
-  <script type="module" src="/src/popup.ts"></script>
+  <!-- Header(img logo - title extension)-->
+  <div class="divheader">
+    <img src="logo.png" alt="logo">
+    <div>
+      <h2 class="titleextension">SCRAPER VEA</h2>
+      <a class="autor" href="https://speed-silk.vercel.app/" target="_blank">By: Darli Barreto</a>
+    </div>
+  </div>
+  <!-- Disclaimer(icon - description discleaimer)-->
+  <div class="divdisclaimer">
+    <img src="icon1.svg" alt="icon disclaimer">
+    <h2 class="descriptdiscleimer">Extensión creada con fines educativos para demostrar técnicas de scraping web.
+    </h2>
+  </div>
+  <div class="divinputdata">
+    <p class="descriptinputdata">Nombre del Archivo</p>
+    <input class="inputdata" id="filenameInput" placeholder="Nombre del archivo para guardar los datos." type="text">
+    <p class="recordatorioinputdata">Sus datos scrapeados se guardaran en formato .JSON</p>
+  </div>
+  <div class="divbuttons">
+    <button class="playbutton" id="scrapeButton">Iniciar Scraping</button>
+    <button class="downloadbutton" id="downloadButton">Descargar JSON</button>
+  </div>
+  <div class="feedback" id="feedback"></div>
+  <div class="output" id="output"></div>
+  <script src="popup.js"></script>
 </body>
+
 </html>
