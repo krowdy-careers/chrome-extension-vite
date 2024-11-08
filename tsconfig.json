@@ -9,9 +9,6 @@
     "forceConsistentCasingInFileNames": true,
     "outDir": "./dist",
     "baseUrl": "./src", 
-    "paths": {
-      "@utils/*": ["./utils/*"] 
-    }
   },
   "include": [
     "src/**/*"
