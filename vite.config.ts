@@ -5,6 +5,7 @@ export default defineConfig({
     outDir: 'dist', // Directorio de salida
     rollupOptions: {
       input: {
+        popup: 'src/popup.ts',
         background: 'src/background.ts',
         content: 'src/content.ts'
       },
